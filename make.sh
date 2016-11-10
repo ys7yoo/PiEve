@@ -6,8 +6,9 @@ if test ! -f config.h; then \
 /Applications/Xcode.app/Contents/Developer/usr/bin/make  all-am
 
 echo "  CC    " PiEve.o;
-gcc -DHAVE_CONFIG_H -I.    -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -I/opt/local/include -g -O2 -MT PiEve.o -MD -MP -MF .deps/PiEve.Tpo -c -o PiEve.o PiEve.c
-mv -f .deps/PiEve.Tpo .deps/PiEve.Po
+gcc -DHAVE_CONFIG_H -I.    -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -I/opt/local/include -g -O2 -MT PiEve.o -MD -MP -MF PiEve.Po -c -o PiEve.o PiEve.c
+#gcc -DHAVE_CONFIG_H -I.    -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -I/opt/local/include -g -O2 -MT PiEve.o -MD -MP -MF .deps/PiEve.Tpo -c -o PiEve.o PiEve.c
+#mv -f .deps/PiEve.Tpo .deps/PiEve.Po
 rm -f PiEve
 
 echo "  CCLD  " PiEve;
